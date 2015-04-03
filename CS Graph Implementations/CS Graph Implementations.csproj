@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Binary Search Tree\BinarySearchTree.cs" />
     <Compile Include="Binary Search Tree\BSTNode.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
