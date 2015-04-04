@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4c5fe950-328a-4d03-a410-8a3b51a1275e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Python_Graph_Algorithms.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
+    <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <OutputPath>.</OutputPath>
+    <Name>Python Graph Algorithms</Name>
+    <RootNamespace>Python Graph Algorithms</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Python_Graph_Algorithms.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A Star Algorithm\adata.py" />
+    <Compile Include="A Star Algorithm\asdriver.py" />
+    <Compile Include="A Star Algorithm\astar.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="A Star Algorithm\roads.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="A Star Algorithm\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
