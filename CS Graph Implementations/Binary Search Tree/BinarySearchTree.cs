@@ -9,7 +9,14 @@ namespace CS_Graph_Implementations
 {
     public class BinarySearchTree
     {
-        public BSTNode Root { get; set; }
+        public BSTNode Root { get; private set; }
+
+        public BinarySearchTree() { }
+
+        public BinarySearchTree(int root)
+        {
+            this.Root = new BSTNode(root);
+        }
 
         public void Insert(int value)
         {
@@ -71,11 +78,22 @@ namespace CS_Graph_Implementations
         #endregion
 
         #region Preorder
+        /// <summary>
+        /// Preorder tree traversal
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// This is the public version so that there's a "clean" method signature for external callers.
+        /// </remarks>
         public void Preorder()
         {
             Preorder(Root);
         }
 
+        /// <summary>
+        /// Preorder tree traversal
+        /// </summary>
+        /// <param name="curr">Current node. Used for the recursive call.</param>
         private void Preorder(BSTNode curr)
         {
             if (curr != null)
