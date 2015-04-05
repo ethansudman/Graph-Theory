@@ -22,7 +22,7 @@ namespace CS_Graph_Implementations
 
             Trace.TraceInformation(tree.Contains(tree.Root, 30).ToString());
 
-            tree.DFS();
+            tree.BFS();
 
         }
     }

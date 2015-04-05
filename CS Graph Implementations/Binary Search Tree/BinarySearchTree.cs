@@ -87,7 +87,7 @@ namespace CS_Graph_Implementations
         }
         #endregion
 
-        public void DFS()
+        public void BFS()
         {
             DFS(Root);
         }
