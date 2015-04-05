@@ -6,6 +6,8 @@
 #
 #  File adata provides access to the map data.
 #
+#  This is the entry point for this application. It is written in Python 2.7.1 and won't work with Python 3 or higher.
+#  I did not write this particular component, roads.dat, or adata.py - just the astar algorithm portion.
 import adata   # Map data
 import astar   # A* class
 import sys
