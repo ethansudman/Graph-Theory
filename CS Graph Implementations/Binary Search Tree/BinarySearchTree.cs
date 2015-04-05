@@ -9,14 +9,32 @@ namespace CS_Graph_Implementations
 {
     public class BinarySearchTree
     {
+        /// <summary>
+        /// This is a property containing the root node for the tree.
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// Others may access this but this can only be set inside of the tree.
+        /// 
+        /// Note that, while external individuals can modify this, we can
+        /// </remarks>
         public BSTNode Root { get; private set; }
 
+        #region Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// No need to provide any parameters; the first node we insert becomes
+        /// </remarks>
         public BinarySearchTree() { }
 
         public BinarySearchTree(int root)
         {
             this.Root = new BSTNode(root);
         }
+        #endregion
 
         public void Insert(int value)
         {

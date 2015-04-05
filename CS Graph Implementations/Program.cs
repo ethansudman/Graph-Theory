@@ -7,6 +7,9 @@ using System.Diagnostics;
 
 namespace CS_Graph_Implementations
 {
+    /// <summary>
+    /// This can be run "on its own" as a console application by making this project the starting project. This class is the entry point.
+    /// </summary>
     public sealed class Program
     {
         public static void Main(string[] args)
@@ -20,10 +23,14 @@ namespace CS_Graph_Implementations
             tree.Insert(4);
             tree.Insert(6);
 
+            // This can be replaced with Console.WriteLine if being run outside of the Visual Studio IDE
             Trace.TraceInformation(tree.Contains(tree.Root, 30).ToString());
 
             tree.BFS();
 
+            Trace.TraceInformation("--------------------------------------------");
+            Trace.TraceInformation("Inorder traversal:");
+            tree.Inorder();
         }
     }
 }
