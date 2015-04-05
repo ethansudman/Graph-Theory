@@ -20,7 +20,7 @@ namespace CS_Graph_Implementations
             tree.Insert(4);
             tree.Insert(6);
 
-            Trace.TraceInformation(tree.MyContains(tree.Root, 30).ToString());
+            Trace.TraceInformation(tree.Contains(tree.Root, 30).ToString());
 
             tree.DFS();
 

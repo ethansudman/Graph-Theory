@@ -43,38 +43,72 @@ namespace CS_Graph_Implementations
             }
         }
 
-        public bool MyContains(BSTNode root, int value)
+        public bool Contains(BSTNode root, int value)
         {
             if (root.Root == value)
                 return true;
             else if (value < root.Root)
-                return MyContains(root.Left, value);
+                return Contains(root.Left, value);
             else
-                return MyContains(root.Right, value);
+                return Contains(root.Right, value);
         }
+
+        #region Inorder
+        public void Inorder()
+        {
+            Inorder(Root);
+        }
+
+        private void Inorder(BSTNode curr)
+        {
+            if (curr != null)
+            {
+                Inorder(curr.Left);
+                Trace.TraceInformation(curr.Root.ToString());
+                Inorder(curr.Right);
+            }
+        }
+        #endregion
+
+        #region Preorder
+        public void Preorder()
+        {
+            Preorder(Root);
+        }
+
+        private void Preorder(BSTNode curr)
+        {
+            if (curr != null)
+            {
+                Trace.TraceInformation(curr.Root.ToString());
+                Preorder(curr.Left);
+                Preorder(curr.Right);
+            }
+        }
+        #endregion
 
         public void DFS()
         {
             DFS(Root);
         }
 
-        private void DFS(BSTNode root)
+        private void DFS(BSTNode curr)
         {
             Trace.TraceInformation("-----------------------------------------------------");
             var queue = new Queue<BSTNode>();
 
             while (true)
             {
-                Trace.TraceInformation(root.Root.ToString());
+                Trace.TraceInformation(curr.Root.ToString());
 
-                if (root.Left != null)
-                    queue.Enqueue(root.Left);
+                if (curr.Left != null)
+                    queue.Enqueue(curr.Left);
 
-                if (root.Right != null)
-                    queue.Enqueue(root.Right);
+                if (curr.Right != null)
+                    queue.Enqueue(curr.Right);
 
                 if (queue.Any())
-                    root = queue.Dequeue();
+                    curr = queue.Dequeue();
                 else break;
             }
 
