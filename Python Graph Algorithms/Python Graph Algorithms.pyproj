@@ -34,6 +34,7 @@
     <Compile Include="A Star Algorithm\adata.py" />
     <Compile Include="A Star Algorithm\asdriver.py" />
     <Compile Include="A Star Algorithm\astar.py" />
+    <Compile Include="A Star Algorithm\cs332map.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="A Star Algorithm\miles.dat" />
