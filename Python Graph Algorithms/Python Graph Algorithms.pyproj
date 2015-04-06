@@ -9,7 +9,7 @@
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
-    <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
     <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
     <InterpreterVersion>2.7</InterpreterVersion>
     <OutputPath>.</OutputPath>
@@ -28,7 +28,7 @@
     <None Include="Python_Graph_Algorithms.py" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="A Star Algorithm\adata.py" />
@@ -36,6 +36,7 @@
     <Compile Include="A Star Algorithm\astar.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="A Star Algorithm\miles.dat" />
     <Content Include="A Star Algorithm\roads.dat" />
   </ItemGroup>
   <ItemGroup>
